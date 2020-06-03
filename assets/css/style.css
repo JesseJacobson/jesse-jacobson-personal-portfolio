@@ -67,20 +67,6 @@ header nav ul li a {
     height: 841px;
 }
 
-.hero-words {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: black;
-    font-size: 18px;
-    line-height: 1.2;
-}
-
-.hero-words h2 {
-    font-style: italic;
-    font-size: 55px;
-}
-
 /* About Me Styles */
 
 .intro {
@@ -91,6 +77,7 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 40px 35px;
 }
 
 .intro-title {
@@ -106,6 +93,38 @@ header nav ul li a {
     text-align: center;
     margin: 3.5%;
     padding: 20px;
+    line-height: 1.3;
+    font-size: 21px;
+}
+
+/* My Work Styles */
+
+.work {
+    background: #fff;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 35px;
+}
+
+.work-title {
+    width: 15%;
+    text-align: center;
+    margin: 3.5%;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.work-info {
+    width: 65%;
+    text-align: center;
+    margin: 3.5%;
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 21px;
 }
 
 /* Contact Me Styles */
@@ -130,9 +149,14 @@ header nav ul li a {
 }
 
 .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     width: 65%;
     text-align: center;
     margin: 3.5%;
+    padding: 20px;
 }
 
 
