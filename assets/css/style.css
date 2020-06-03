@@ -84,8 +84,57 @@ header nav ul li a {
 /* About Me Styles */
 
 .intro {
-    
+    background: #80ba86;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
+.intro-title {
+    width: 15%;
+    text-align: center;
+    margin: 3.5%;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.intro-info {
+    width: 65%;
+    text-align: center;
+    margin: 3.5%;
+    padding: 20px;
+}
+
+/* Contact Me Styles */
+
+.contact {
+    background: #80ba86;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 35px;
+}
+
+.contact-title {
+    font-size: 30px;
+    text-align: center;
+    margin: 3.5%;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.contact-info {
+    width: 65%;
+    text-align: center;
+    margin: 3.5%;
+}
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
