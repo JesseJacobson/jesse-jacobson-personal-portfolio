@@ -40,7 +40,9 @@ header nav {
 
 header nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
@@ -53,14 +55,11 @@ header nav ul li a {
 /* Hero Styles */
 
 .hero {
-    display: flex;
-    justify-content: flex-end;
     background-image: url(../images/olympus.JPG);
     background-size: cover;
     background-position: 80%;
-    align-items: flex-start;
     background-attachment: fixed;
-    height: 841px;
+    height: 843px;
 }
 
 /* About Me Styles */
@@ -145,18 +144,15 @@ header nav ul li a {
 
 .work-info {
     margin: 3px;
-    background: #80ba86;
-    color: #fff;
-    font-family: sans-serif;
-    flex: 1;
+    flex: 40%;
+}
+
+.one {
+    flex: 60%;
 }
 
 .work-info:hover .website-img::after {
     opacity: 1;
-}
-
-.flex {
-    width: 990px;
 }
 
 .run-buddy {
@@ -173,6 +169,7 @@ header nav ul li a {
 .website-img {
     width: 100%;
     min-height: 300px;
+    background-color: #80ba86;
     display: flex;
     padding: 15px;
     align-items: flex-end;
@@ -215,6 +212,8 @@ header nav ul li a {
 .website-img h4 {
     font-weight: lighter;
     font-size: 24px;
+    color: #fff;
+    font-family: sans-serif;
     position: relative;
     z-index: 9998;
     top: 200px;
@@ -265,9 +264,11 @@ header nav ul li a {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
+
     header {
         padding-bottom: 0px;
         position: relative;
+        background-position: 53%;
     }
 
     header nav {
@@ -282,6 +283,10 @@ header nav ul li a {
         font-size: 20px;
     }
 
+    .hero {
+        background-position: 53%;
+    }
+
     .hero-words {
         width: 100%;
         text-align: center;
@@ -291,11 +296,16 @@ header nav ul li a {
         border-top: 0px solid transparent;
         margin-top: 0px;
         background-clip: padding-box;
+        width: 100%;
     }
 
     .intro-img {
         width: 250px;
         align-items: center;
+    }
+
+    .intro-info {
+        padding: 0px;
     }
 
     .flex {
@@ -310,6 +320,60 @@ header nav ul li a {
         justify-content: space-evenly;
         padding: 0;
         margin: 0;
+        width: 100%;
 
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 916px;
+        background-position: 53%;
+    }
+    
+    .intro-info {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .flex {
+        width: 768px;
+        padding: 0 63px;
+        background: #fff;
+    }
+
+    .work-title {
+        width: 500px;
+    }
+
+    .work-info:hover .website-img::after {
+        opacity: none;
+    }
+
+    .website-img h3, .website-img h4 {
+        display: block;
+        top: 0px;
+    }
+
+    .website-img::after {
+        display: none;
+    }
+
+    .website-img h4 {
+        font-size: 20px;
+    }
+
+    #font {
+        font-size: 24px;
+    } 
+
+    .contact {
+        padding: 0;
+    }
+
+    .contact-info {
+        padding-bottom: 40px;
     }
 }
