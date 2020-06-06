@@ -3,7 +3,7 @@
 This is a website for my portfolio, which showcases my work, skill, and competancy in fullstack web development. 
 
 ## Image
-![Website Screenshot](assests/images/screenshot.jpg)
+![Website Screenshot](assets/images/screenshot.jpg)
 
 ## Link to Website
 https://jessejacobson.github.io/portfolio/
