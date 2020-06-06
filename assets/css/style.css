@@ -8,24 +8,27 @@
 
 header {
     padding: 20px 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     background-image: url(../images/olympus.JPG);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     position: sticky;
     top: 0;
-    -webkit-sticky: postion;
+    -webkit-position: sticky;
     z-index: 9999;
 }
 
 header h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-weight: bold;
     font-size: 40px;
     font-family: sans-serif;
     color: black;
     margin: 0%;
+    flex: 100%;
 }
 
 header a {
@@ -36,12 +39,13 @@ header a {
 
 header nav {
     margin: 7px 0;
+
 }
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -50,16 +54,25 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-align: center;
 }
 
 /* Hero Styles */
 
 .hero {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 35px;
     background-image: url(../images/olympus.JPG);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
-    height: 843px;
+}
+
+.olympus {
+    height: 763px;
 }
 
 /* About Me Styles */
@@ -89,13 +102,12 @@ header nav ul li a {
     min-height: 300px;
     position: static;
     margin: 3.5%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.head-shot {
     background-image: url(../images/head-shot.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
 
 .intro-info {
@@ -260,6 +272,33 @@ header nav ul li a {
     padding: 20px;
 }
 
+/* MEDIA QUERY FOR LARGER TABLETS AND DESTOP SCREENS */
+
+@media screen and (max-width: 1024px) {
+    
+    header {
+        background-position: 53%;
+        padding: 20px 35px 0px 35px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    .hero {
+        background-position: 53%;
+        height: 1250px;
+    }
+    
+    .intro-img {
+        width: 25%;
+    }
+}
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -285,6 +324,7 @@ header nav ul li a {
 
     .hero {
         background-position: 53%;
+        height: 915px;
     }
 
     .hero-words {
@@ -307,10 +347,6 @@ header nav ul li a {
     .intro-info {
         padding: 0px;
     }
-
-    .flex {
-        width: 785px;
-    }
     
     .work-gallery {
         flex: 0 100%;
@@ -332,16 +368,16 @@ header nav ul li a {
         height: 916px;
         background-position: 53%;
     }
+
+    .intro {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
     
     .intro-info {
         padding-right: 0;
         width: 100%;
-    }
-
-    .flex {
-        width: 768px;
-        padding: 0 63px;
-        background: #fff;
     }
 
     .work-title {
@@ -375,5 +411,33 @@ header nav ul li a {
 
     .contact-info {
         padding-bottom: 40px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
+    .hero {
+        height: 535px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    header nav ul li {
+        font-size: 7vw;
+        font-weight: normal;
+    }
+
+    .work-gallery {
+        flex-flow: column wrap;
+    }
+
+    .contact-info {
+        flex-flow: column wrap;
+        line-height: 2.5;
+
     }
 }
