@@ -64,7 +64,7 @@ header nav ul li a {
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: center;
-    padding: 0px 35px 490px 0px;
+    padding: 100px 35px 505px 35px;
     margin: 50px;
     background-image: url(../images/olympus-two.jpg);
     background-size: cover;
@@ -79,8 +79,11 @@ header nav ul li a {
 .olympus h2 {
     text-align: center;
     font-family: sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     margin: 25px;
+    background: #fff;
+    opacity: 90%;  
+    border-radius: 15px;
 }
 
 .hero nav a {
@@ -96,7 +99,6 @@ header nav ul li a {
     border-radius: 15px;
     text-shadow: none;
 }
-
 /* About Me Styles */
 
 .intro {
@@ -310,12 +312,14 @@ header nav ul li a {
     header nav ul li a {
         font-size: 20px;
     }
-    
     .hero {
-        background-position: 53%;
-        height: 1250px;
+        height: 950px;
     }
-    
+
+    .hero nav a {
+        font-size: 5vw;
+    }
+
     .intro-img {
         width: 25%;
     }
@@ -345,14 +349,28 @@ header nav ul li a {
     }
 
     .hero {
-        background-position: 53%;
-        height: 915px;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 25px;
+        padding: 10px 20px;
+        height: 500px;
     }
-
-    .hero-words {
-        width: 100%;
+    
+    .olympus h2 {
+        font-size: 40px;
         text-align: center;
-    }
+        padding: 10px;
+        background: #fff;
+        opacity: 90%;  
+        border-radius: 15px;
+        }
+
+    .hero nav a {
+    padding: 10px 15px;
+    font-size: 3vw;
+    text-align: center;
+     }
 
     .intro, .work, .contact {
         border-top: 0px solid transparent;
@@ -386,9 +404,9 @@ header nav ul li a {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
+
     .hero {
-        height: 916px;
-        background-position: 53%;
+        height: 800px;
     }
 
     .intro {
@@ -438,9 +456,21 @@ header nav ul li a {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+
     .hero {
-        height: 535px;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 385px;
+        background-position: 53%;
+    }
+
+    .olympus h2 {
+        font-size: 25px;
+    }
+
+    .hero nav a {
+        font-size: 5vw;
     }
 
     header nav ul {
